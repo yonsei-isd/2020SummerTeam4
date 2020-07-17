@@ -3,9 +3,152 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>ISD 2020 Summer Team4</title>
+    <title>Smiley Smell</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+
+
+            $('body').click(function () {
+                window.location.href="./twine.html"
+            });
+
+        });
+    </script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box1 {
+            position:relative;
+            width: 100%;
+            height: 50vh;
+            background-color: #5271ff;
+        }
+
+        #isd {
+            width: 20vw;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box1 div {
+            display: inline-block;
+            width: auto;
+            color: white;
+            position:absolute;
+            top:50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box1 h1 {
+            font-size: 4rem;
+        }
+
+        .box1 p {
+            text-align: center;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 26vh;
+            position:relative;
+            background-color: orange;
+        }
+
+        .box2 div{
+            color: white;
+            display: inline;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top : 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box3 {
+            width: 100%;
+            height: 24vh;
+            position: relative;
+            background-color: #5271ff;
+        }
+
+        #introduce{
+            display: inline;
+            position: absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .box3 div p{
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        #sponsers{
+            bottom: 5%;
+            right: 2%;
+            position:absolute;
+            display: inline;
+        }
+
+        #sponsers img{
+            width: 5vw;
+            height: auto;
+        }
+
+        #sponsers label{
+            color:lightgray;
+            font-weight:100;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>This page for ISD 2020 Summer Team4</h1>
+    <div class="box1">
+        <img id="isd" src="img/isd.png"/>
+        <div>
+            <h2>2020 YONSEI SUMMER</h2>
+            <h1>Interactive<br/>Storytelling<br/>Design</h1>
+            <br/>
+            <p>Final Contents</p>
+        </div>
+    </div>
+    <div class="box2">
+        <div>
+            <h1>TITLE : 플라잉 북마크를 잡는법</h1>
+            <h1>TEAM : Deliverse</h1>
+            <br/>
+            <h3>PRESS ANY PART TO PLAY</h3>
+        </div>
+    </div>
+    <div class="box3">
+        <div id="introduce">
+            <p>
+                본 작품은 2020년 연세대학교 여름 계절학기 <인터랙티브 스토리텔링 디자인>
+                    수강생 기말 과제물입니다.<br />
+                    (지도교수: 권보연)<br />
+                    <br />
+                    본 작품은 스토리텔링을 활용한 직간접 광고/홍보 커뮤니케이션 실습 목적으로 제작된 픽션입니다.<br />
+                    작품에 등장하는 인물, 설정, 기업명, 기업 관련 정보들은 가상, 임의 설정을 갖고 있습니다.<br />
+                    <br />
+                    본 수업은 연세대학교 문과대학 인문융합교육원, 은행권 청년창업재단 D.CAMP의 교육 후원을 받았습니다.
+            </p>
+        </div>
+        <div id="sponsers">
+            <label>Sponsered by</label>
+            &nbsp;
+            <img src="img/dcamp.png" />
+            <img src="img/frontone.png"/>
+        </div>
+    </div>
 </body>
 </html>
